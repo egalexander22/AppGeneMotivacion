@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGeneMotivacion.MainPage">
+
+    <ScrollView>
+        <StackLayout
+            Background="Purple"
+            Padding="10,0"
+            Spacing="40">
+            <Label
+                Text="BIENVENIDO"
+                TextColor="Aquamarine"
+                HorizontalTextAlignment="Start"
+                FontSize="Large"
+                FontAttributes="Italic"/>
+            
+            
+            <Label
+                Text="LO QUE TE VA A MOTIVAR"
+                HorizontalTextAlignment="Center"
+                FontAttributes="Italic"
+                TextColor="Aquamarine"
+                FontFamily=""
+               Style="{StaticResource Headline}"
+               SemanticProperties.HeadingLevel="Level1" />
+            <Image
+                Source="brain.png"
+                Margin="0"
+                HeightRequest="250"/>
+
+            <Button
+                x:Name="CounterBtn"
+                BorderWidth="10"
+                BackgroundColor="Aquamarine"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="Large"
+                Text="lo que te motivara HOY"
+                Margin="10,0,10,0"
+                HorizontalOptions="Center" >
+            </Button>
+            <Label
+                HeightRequest="120"
+                Background="DarkViolet"
+                Margin="10,0,10,10"/>
+
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

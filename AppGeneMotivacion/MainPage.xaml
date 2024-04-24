@@ -14,9 +14,11 @@
                 HorizontalTextAlignment="Start"
                 FontSize="Large"
                 FontAttributes="Italic"/>
-            
-            
-            <Label
+
+            <Border Stroke="Aquamarine"
+                    StrokeThickness="4"
+                    StrokeShape="RoundRectangle 40,0,0,40">
+                <Label
                 Text="LO QUE TE VA A MOTIVAR"
                 HorizontalTextAlignment="Center"
                 FontAttributes="Italic"
@@ -24,6 +26,7 @@
                 FontFamily=""
                Style="{StaticResource Headline}"
                SemanticProperties.HeadingLevel="Level1" />
+            </Border>
             <Image
                 Source="brain.png"
                 Margin="0"
@@ -40,10 +43,14 @@
                 Margin="10,0,10,0"
                 HorizontalOptions="Center" >
             </Button>
+            <Border Stroke="Aquamarine"
+                    StrokeThickness="4"
+                    StrokeShape="RoundRectangle 40,40,40,40"
+                    Background="Aquamarine">
             <Label
                 HeightRequest="120"
-                Background="DarkViolet"
                 Margin="10,0,10,10"/>
+            </Border>
 
 
 

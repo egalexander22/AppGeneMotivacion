@@ -9,11 +9,17 @@
             Padding="10,0"
             Spacing="40">
             <Label
-                Text="BIENVENIDO"
+                Text="MotiApp"
                 TextColor="Aquamarine"
                 HorizontalTextAlignment="Start"
                 FontSize="Large"
                 FontAttributes="Italic"/>
+            <Label x:Name="scrollingLabel"
+                   Text="BIENVENIDOS"
+                   TextColor="Aquamarine"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="Start"/>
 
             <Border Stroke="Aquamarine"
                     StrokeThickness="4"
@@ -24,8 +30,8 @@
                 FontAttributes="Italic"
                 TextColor="Aquamarine"
                 FontFamily=""
-               Style="{StaticResource Headline}"
-               SemanticProperties.HeadingLevel="Level1" />
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
             </Border>
             <Image
                 Source="brain.png"
@@ -33,7 +39,8 @@
                 HeightRequest="250"/>
 
             <Button
-                x:Name="CounterBtn"
+                x:Name="generateButton"
+                Clicked="OnGenerateButtonClicked"
                 BorderWidth="10"
                 BackgroundColor="Aquamarine"
                 TextColor="Black"
@@ -44,12 +51,18 @@
                 HorizontalOptions="Center" >
             </Button>
             <Border Stroke="Aquamarine"
+                    Margin="0,0,0,0"
                     StrokeThickness="4"
                     StrokeShape="RoundRectangle 40,40,40,40"
                     Background="Aquamarine">
-                <Label
+              <Label
+                x:Name="quoteLabel"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
                 HeightRequest="120"
-                Margin="10,0,10,10"/>
+                Margin="30,20,30,0"/>
             </Border>
 
 
